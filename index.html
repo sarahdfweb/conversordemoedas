@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div</title>
+
+    <link rel="stylesheet" href="stylo.css"> 
+   <style></style> 
+
+   
+</head>
+<body>
+    <div id="cabecalho">
+        Conversor de moedas
+
+    </div>
+
+    <div id="meio">
+       
+       <h1>Alura</h1>
+       <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg" class="page-logo" alt="">
+    </div>
+
+
+  
+   <div id="principal">
+   
+
+       
+        <h1>Faça sua conversão</h1>
+        <section class='conteudos'>
+            <div class='form-group'>
+                <label for="valorEmReal">R$</label>
+                <input
+                    type="number"
+                    name="valorEmReal"
+                    id="valorEmReal"
+                    class='input'
+                    step='0.01'
+                    min='0.00'
+                    max='9999999999.99'
+                    value=''
+                    tabindex="1"
+                    onClick='ativarBotao()'
+                    onChange='ativarBotao()'
+                    autofocus
+                    required
+                />
+           
+    
+           <div class="form-group">             
+                <input
+                    type="radio"
+                    id='dolar'
+                    name="moedaEstrangeira"
+                    class="input radio"
+                    value='Dólar'
+                    tabindex="2"
+                /> <label for="dolar">Dólar</label>
+    
+                <input
+                    type="radio"
+                    id='euro'
+                    name="moedaEstrangeira"
+                    class="input radio"
+                    value='Euro'
+                    tabindex="3"
+                /> <label for="euro">Euro</label>
+    
+                <input
+                    type="radio"
+                    id='libra'
+                    name="moedaEstrangeira"
+                    class="input radio"
+                    value='Libra'
+                    tabindex="4"
+                /> <label for="libra">Libra</label>
+    
+                
+           <div class="form-group">
+               <button class='desativado botao' id='btnConverter'
+               onClick='ativarBotao(); bloquearBotao()'>Converter</button>
+               <button type="reset" class='botao' id='btnLimpar' tabindex="7">Limpar</button>
+           </div>
+        </section>
+        <div class="instrucoes">
+            <p class='centro' id='aviso'>Digite o valor, escolha a moeda e converter</p>
+        </div>
+        <br>
+       
+  
+            <img src= "moeda.jpg" alt="some text" width=100 height=150>
+            <img src= "libra.jpg" alt="some text" width=100 height=150>
+            <img src= "real.jpg" alt="some text" width=100 height=150>
+            </figure>
+        </div>
+        
+    </main>
+
+    <script src="js/Conversor.js"></script>
+
+  </div>
+</div>
+</div>
+
+   
+    <div id="rodape">
+    
+    </div>
+    <style src="stylo.css"></style>
+    <script src="main.js"></script>
+ 
+
+</body>
+</html>
